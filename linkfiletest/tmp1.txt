@@ -1,0 +1,4 @@
+/home/kyb/workspace/test1_x86_fileio/yyy ./y2/y3/hyy
+/home/kyb/workspace/test1_x86_fileio/1/2/xxx ./hxx
+/home/kyb/workspace/test1_x86_fileio/bbb ./hbbb
+/home/kyb/workspace/test1_x86_fileio/newdir1/ddd ./newdir2/hddd
