@@ -17,7 +17,7 @@ char *strTmp1 = "./tmp1.txt";
 char *strTmp2 = "./tmp2.txt";
 char *strOutput = "./output.sh";
 
-char strExistingBasePath[MAX_STR_BUF] = "/home2/yunbae.kim/temp/aaa";
+char strExistingBasePath[MAX_STR_BUF] = "/home/kyb/workspace/test1_x86_fileio";
 
 char str1[MAX_STR_BUF];
 char str2[MAX_STR_BUF];
@@ -95,10 +95,10 @@ int main(void) {
 			continue;
 		}
 
-		strncpy(str1_2,&str1[strPathLen],MAX_STR_BUF-strPathLen);
+		strncpy(str1_2,&str1[strPathLen+1],MAX_STR_BUF-strPathLen);
 
 		//write
-		snprintf(buf,MAX_STR_BUF,"ln -Tfs %s %s\n",str1_2,str2);
+		snprintf(buf,MAX_STR_BUF,"%s %s\n",str1_2,str2);
 		fputs(buf,fp2);
 		lineCount++;
 	}
