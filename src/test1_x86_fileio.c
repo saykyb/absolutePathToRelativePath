@@ -17,7 +17,8 @@ char *strTmp1 = "./tmp1.txt";
 char *strTmp2 = "./tmp2.txt";
 char *strOutput = "./output.sh";
 
-char strExistingBasePath[MAX_STR_BUF] = "/home/kyb/workspace/test1_x86_fileio";
+//char strExistingBasePath[MAX_STR_BUF] = "/home/kyb/workspace/test1_x86_fileio";
+char strExistingBasePath[MAX_STR_BUF] = "/home2/yunbae.kim/work/fsl-community-bsp";
 
 char str1[MAX_STR_BUF];
 char str2[MAX_STR_BUF];
@@ -36,6 +37,8 @@ int main(void) {
 */
 	int lineCount;
 	char strGet[MAX_STR_BUF];
+	char strCmt[]="Search command : find . -type l -printf '%l %p\\n'|grep '\/home'>tmp1.txt";
+	printf("\n%s\n",strCmt);
 	while(1){
 		memset(strGet,0,MAX_STR_BUF);
 		printf("\n링크된 심볼릭 링크 base 경로(default) : %s\n",strExistingBasePath);
